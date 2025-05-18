@@ -1,0 +1,151 @@
+model_name,gpu_memory_used_gb,inference_time_seconds,input_prompt,thinking_content,predicted_output
+Qwen/Qwen3-0.6B,1.1186728477478027,5.023673057556152,"
+    You are a expert information extraction agent and are tasked with extracting information from the following product description.
+    
+    Product description:
+    
+    The Sony WH-1000XM5 wireless headphones feature industry-leading noise cancellation technology, 
+    offering up to 30 hours of battery life on a single charge. They come with a premium price tag of $399.99 
+    and are available in black and silver colors. The headphones weigh 250 grams and include a 3.5mm audio jack 
+    for wired listening. They support Bluetooth 5.2 and are compatible with both iOS and Android devices. 
+    The ear cups are made of soft memory foam and the headband is adjustable for maximum comfort.
+    
+
+    Required attributes to extract:
+    - brand
+    - model
+    - price
+    - colors
+    - battery_life
+    - weight
+    - connectivity_type
+    - compatibility
+    - materials
+    - noise_cancellation
+    
+    Please format your response as a valid JSON object with these exact attribute names.
+    ",,"```json
+{
+  ""brand"": ""Sony"",
+  ""model"": ""WH-1000XM5"",
+  ""price"": 399.99,
+  ""colors"": [""black"", ""silver""],
+  ""battery_life"": 30,
+  ""weight"": 250,
+  ""connectivity_type"": ""Bluetooth 5.2"",
+  ""compatibility"": ""iOS, Android"",
+  ""materials"": ""soft memory foam"",
+  ""noise_cancellation"": ""industry-leading""
+}
+```"
+Qwen/Qwen3-1.7B,3.213141918182373,5.460692405700684,"
+    You are a expert information extraction agent and are tasked with extracting information from the following product description.
+    
+    Product description:
+    
+    The Sony WH-1000XM5 wireless headphones feature industry-leading noise cancellation technology, 
+    offering up to 30 hours of battery life on a single charge. They come with a premium price tag of $399.99 
+    and are available in black and silver colors. The headphones weigh 250 grams and include a 3.5mm audio jack 
+    for wired listening. They support Bluetooth 5.2 and are compatible with both iOS and Android devices. 
+    The ear cups are made of soft memory foam and the headband is adjustable for maximum comfort.
+    
+
+    Required attributes to extract:
+    - brand
+    - model
+    - price
+    - colors
+    - battery_life
+    - weight
+    - connectivity_type
+    - compatibility
+    - materials
+    - noise_cancellation
+    
+    Please format your response as a valid JSON object with these exact attribute names.
+    ",,"{
+  ""brand"": ""Sony"",
+  ""model"": ""WH-1000XM5"",
+  ""price"": ""$399.99"",
+  ""colors"": [""black"", ""silver""],
+  ""battery_life"": ""up to 30 hours"",
+  ""weight"": ""250 grams"",
+  ""connectivity_type"": ""Bluetooth 5.2 and 3.5mm audio jack"",
+  ""compatibility"": ""iOS and Android devices"",
+  ""materials"": ""soft memory foam for ear cups, adjustable headband"",
+  ""noise_cancellation"": ""industry-leading noise cancellation technology""
+}"
+Qwen/Qwen3-4B,7.500389575958252,6.223637580871582,"
+    You are a expert information extraction agent and are tasked with extracting information from the following product description.
+    
+    Product description:
+    
+    The Sony WH-1000XM5 wireless headphones feature industry-leading noise cancellation technology, 
+    offering up to 30 hours of battery life on a single charge. They come with a premium price tag of $399.99 
+    and are available in black and silver colors. The headphones weigh 250 grams and include a 3.5mm audio jack 
+    for wired listening. They support Bluetooth 5.2 and are compatible with both iOS and Android devices. 
+    The ear cups are made of soft memory foam and the headband is adjustable for maximum comfort.
+    
+
+    Required attributes to extract:
+    - brand
+    - model
+    - price
+    - colors
+    - battery_life
+    - weight
+    - connectivity_type
+    - compatibility
+    - materials
+    - noise_cancellation
+    
+    Please format your response as a valid JSON object with these exact attribute names.
+    ",,"{
+  ""brand"": ""Sony"",
+  ""model"": ""WH-1000XM5"",
+  ""price"": ""399.99"",
+  ""colors"": [""black"", ""silver""],
+  ""battery_life"": ""30 hours"",
+  ""weight"": ""250 grams"",
+  ""connectivity_type"": ""Bluetooth 5.2"",
+  ""compatibility"": ""iOS and Android"",
+  ""materials"": [""soft memory foam"", ""adjustable headband""],
+  ""noise_cancellation"": ""industry-leading""
+}"
+Qwen/Qwen3-8B,15.264392375946045,6.449524641036987,"
+    You are a expert information extraction agent and are tasked with extracting information from the following product description.
+    
+    Product description:
+    
+    The Sony WH-1000XM5 wireless headphones feature industry-leading noise cancellation technology, 
+    offering up to 30 hours of battery life on a single charge. They come with a premium price tag of $399.99 
+    and are available in black and silver colors. The headphones weigh 250 grams and include a 3.5mm audio jack 
+    for wired listening. They support Bluetooth 5.2 and are compatible with both iOS and Android devices. 
+    The ear cups are made of soft memory foam and the headband is adjustable for maximum comfort.
+    
+
+    Required attributes to extract:
+    - brand
+    - model
+    - price
+    - colors
+    - battery_life
+    - weight
+    - connectivity_type
+    - compatibility
+    - materials
+    - noise_cancellation
+    
+    Please format your response as a valid JSON object with these exact attribute names.
+    ",,"{
+  ""brand"": ""Sony"",
+  ""model"": ""WH-1000XM5"",
+  ""price"": ""$399.99"",
+  ""colors"": [""black"", ""silver""],
+  ""battery_life"": ""30 hours"",
+  ""weight"": ""250 grams"",
+  ""connectivity_type"": ""Bluetooth 5.2"",
+  ""compatibility"": [""iOS"", ""Android""],
+  ""materials"": [""soft memory foam"", ""adjustable headband""],
+  ""noise_cancellation"": ""industry-leading noise cancellation technology""
+}"
